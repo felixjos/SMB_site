@@ -10,25 +10,87 @@
     position: relative;
 }
 
-.site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
+big {
+ color:green;
+}
 
+#smb_title {
+	float: left;
+}
+
+#smb_logo {
+	float: right;
+}
+
+.site-title {
+	text-transform: uppercase;
+    font-size: 35px;
+    font-style: italic;
+    line-height: 58px;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    letter-spacing: 4px;
+    float: left;
+	
+	small {
+		vertical-align: top;
+	}
+	
     &,
+    &:hover {
+    	text-decoration: none;
+    	}
     &:visited {
         color: $grey-color-dark;
     }
 }
 
+
+
 .site-nav {
     float: right;
     line-height: 56px;
-
+	margin-top: 0px;
     .menu-icon {
         display: none;
+    }
+    
+    hr { margin: -0.5em 0px 0px 0px; }
+    
+    #navigation_container {
+    	margin: -0.5em 0px 0px 0px;
+    	width: 750px;
+    }
+    
+    .rectangle {
+       height: 30px;
+       position: relative;
+       margin: -13px 0 0 0em;
+       border-color: #0f0f0f;
+       border-width: 1px;
+       border-top: 0px;
+       border-style: solid;
+       border-radius: 50px;
+    }
+    
+    #navigation li {
+    	list-style: none;
+    	display: black;
+    	float: left;
+    	margin: -.8em 0em 0 1em;
+    }
+    
+    #navigation li a {
+    	display: block;
+    	text-decoration: none;
+    	color: #0f0f0f;
+    	font-size: 0.9em;
+    }
+    
+    #navigation li a:hover {
+    	text-shadow: 0 2px 1px rgba(0,0,0,5);
+    	color: #0f0f0f;
     }
 
     .page-link {
@@ -133,6 +195,10 @@
 .footer-col-3 {
     width: -webkit-calc(45% - (#{$spacing-unit} / 2));
     width:         calc(45% - (#{$spacing-unit} / 2));
+}
+.footer-col-4 {
+	width: -webkit-calc(65% - (#{$spacing-unit} / 2));
+	width:         calc(65% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {

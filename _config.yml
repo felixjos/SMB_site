@@ -1,11 +1,11 @@
 # Site settings
 title: University of Hawaii at Manoa Student Media Board
-email: 
+email: uhsmb@hawaii.edu
 description: 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: 
-github_username:  
+github_username: 
 
 # Build settings
 markdown: kramdown

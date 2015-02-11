@@ -1,0 +1,11 @@
+---
+layout: info
+title: Student Media Board About Us
+head: About Us
+---
+
+{% for post in site.posts %} 
+	{% if post.categories contains "about_us" %}  
+     <small>{{ post.content }}</small>
+  {% endif %}
+{% endfor %}
